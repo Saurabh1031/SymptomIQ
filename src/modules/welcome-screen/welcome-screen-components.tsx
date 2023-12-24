@@ -53,9 +53,10 @@ export const ContentSubHeading = styled.div`
 
 export const DoctorImage = styled.img`
   margin-top: 30px;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin-top: 30px;
+  border-radius: 10px;
 `;
 
 export const DoctorImageContainer = styled.div`

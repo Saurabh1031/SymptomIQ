@@ -11,6 +11,7 @@ import {
     WelcomeHeading,
 } from "./welcome-screen-components";
 import doctorPatientImage from "../../assets/images/doctorPatient.png";
+import HealthLogo from "../../assets/images/healthlogo.jpeg";
 import { camelCase } from "@app/utils/general"
 
 const WelcomeScreen = ({ name }) => {
@@ -18,12 +19,12 @@ const WelcomeScreen = ({ name }) => {
         <MainContainer>
             <Content>
                 <WelcomeHeading>
-                    <HiText>Hi</HiText>
+                    <HiText>Hey there!</HiText>
                     <br />
                     <Name>{camelCase(name)}</Name>
                 </WelcomeHeading>
                 <DoctorImageContainer>
-                    <DoctorImage src={doctorPatientImage} alt="doctor patient pic" />
+                    <DoctorImage src={HealthLogo} alt="Health logo" />
                 </DoctorImageContainer>
                 <ContentHeading>
                     Welcome to the <BoldContent>SymptomIQ!</BoldContent>

@@ -4,7 +4,7 @@ import Layout from "./components/layout/layout";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.REACT_APP_HOMEPAGE}>
+    <BrowserRouter>
       <Layout />
     </BrowserRouter>
   );
