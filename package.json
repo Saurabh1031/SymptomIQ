@@ -1,8 +1,8 @@
 {
+    "homepage": "https://github.com/Saurabh1031/SymptomIQ.git",
     "name": "svaas",
     "version": "1.1.2",
     "private": true,
-    "homepage": "/app/healthbot/",
     "dependencies": {
         "@azure/msal-browser": "^2.32.0",
         "@azure/msal-react": "^1.4.9",
@@ -37,7 +37,9 @@
     },
     "scripts": {
         "start": "react-app-rewired start",
-        "build": "env-cmd -f .env react-app-rewired --max-old-space-size=4096 build"
+        "build": "env-cmd -f .env react-app-rewired --max-old-space-size=4096 build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
