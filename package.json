@@ -1,0 +1,102 @@
+{
+    "name": "svaas",
+    "version": "1.1.2",
+    "private": true,
+    "homepage": "/app/healthbot/",
+    "dependencies": {
+        "@azure/msal-browser": "^2.32.0",
+        "@azure/msal-react": "^1.4.9",
+        "@bugfender/sdk": "^2.2.0",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/jest": "^26.0.15",
+        "@types/lodash": "^4.14.170",
+        "@types/node": "^12.0.0",
+        "@types/styled-components": "^5.1.9",
+        "axios": "^1.4.0",
+        "env-cmd": "^10.1.0",
+        "msal": "^1.4.17",
+        "react": "^17.0.2",
+        "react-datepicker": "3.8.0",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.10.1",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-select": "^5.7.4",
+        "react-slick": "^0.29.0",
+        "slick-carousel": "^1.8.1",
+        "styled-components": "^5.3.0",
+        "typescript": "^4.0.3",
+        "web-vitals": "^0.2.4",
+        "webpack": "4.44.2"
+    },
+    "resolutions": {
+        "react-error-overlay": "6.0.9"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "env-cmd -f .env react-app-rewired --max-old-space-size=4096 build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ],
+        "overrides": [
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            },
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            },
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
+            }
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^6.2.9",
+        "@storybook/addon-essentials": "^6.2.9",
+        "@storybook/addon-links": "^6.2.9",
+        "@storybook/node-logger": "^6.2.9",
+        "@storybook/preset-create-react-app": "^3.1.7",
+        "@storybook/react": "^6.2.9",
+        "@types/file-saver": "^2.0.5",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.6",
+        "@types/react-paginate": "^7.1.1",
+        "@types/react-router-dom": "^5.1.7",
+        "gh-pages": "^6.1.1",
+        "http-server": "^0.12.3",
+        "react-app-rewired": "^2.1.11"
+    }
+}

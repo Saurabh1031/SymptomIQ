@@ -1,0 +1,40 @@
+import {
+    BoldContent,
+    Content,
+    ContentHeading,
+    ContentSubHeading,
+    DoctorImage,
+    DoctorImageContainer,
+    HiText,
+    MainContainer,
+    Name,
+    WelcomeHeading,
+} from "./welcome-screen-components";
+import doctorPatientImage from "../../assets/images/doctorPatient.png";
+import { camelCase } from "@app/utils/general"
+
+const WelcomeScreen = ({ name }) => {
+    return (
+        <MainContainer>
+            <Content>
+                <WelcomeHeading>
+                    <HiText>Hi</HiText>
+                    <br />
+                    <Name>{camelCase(name)}</Name>
+                </WelcomeHeading>
+                <DoctorImageContainer>
+                    <DoctorImage src={doctorPatientImage} alt="doctor patient pic" />
+                </DoctorImageContainer>
+                <ContentHeading>
+                    Welcome to the <BoldContent>SymptomIQ!</BoldContent>
+                    <ContentSubHeading>
+                        Please answer the following questions to find out what might be
+                        causing your symptoms
+                    </ContentSubHeading>
+                </ContentHeading>
+            </Content>
+        </MainContainer>
+    );
+}
+
+export default WelcomeScreen;

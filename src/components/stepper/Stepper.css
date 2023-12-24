@@ -1,0 +1,40 @@
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 4px;
+}
+.step-item:not(:first-child):before {
+  content: "";
+  width: 25vw;
+  border: 1px dashed rgb(226, 232, 240);
+  right: 50%;
+  transform: translateY(-50%);
+  top: 22%;
+  position: absolute;
+}
+.step {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a9a9a9;
+  font-weight: 600;
+  background-color: #adadad;
+  z-index: 10;
+}
+.active .step {
+  background-color: orange;
+}
+.complete .step {
+  background-color: rgb(22, 163, 74);
+}
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+  background-color: rgb(22, 163, 74);
+  border: 1px solid rgb(22, 163, 74);
+}
