@@ -69,7 +69,7 @@ const Habits = () => {
         <>
             <NewHeader
                 className="specialities"
-                title="SymptomIQ"
+                title="BodyCheck"
                 showBackButton={true}
                 onBack={() => {
                     history.push({ pathname: "/history" });

@@ -50,7 +50,8 @@ if (AZUREAUTHENTICATION) {
 
 ReactDOM.render(
   <React.StrictMode>
-    {AZUREAUTHENTICATION ? <AzureApp pca={msalInstance} /> : <App />}
+    {/* {AZUREAUTHENTICATION ? <AzureApp pca={msalInstance} /> : <App />} */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

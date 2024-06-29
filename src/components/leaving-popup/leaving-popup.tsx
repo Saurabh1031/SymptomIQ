@@ -21,7 +21,7 @@ const LeavingMidway = ({ onclose }: any) => {
                 closeClassName={"open"}>
                 <Container>
                     <SideContainer>
-                        <Header>Leave SymptomIQ</Header>
+                        <Header>Leave BodyCheck</Header>
                         <Description>
                             Are you sure you want to leave? <br />
                             Changes you made will not be saved.

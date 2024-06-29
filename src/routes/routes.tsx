@@ -1,5 +1,6 @@
 import { Switch, Route } from "react-router-dom";
 import Home from "../components/Home";
+import PersonalDetails from "@app/modules/personal-details/personal-details";
 import HomeScreen from "@app/modules/homescreen/homescreen";
 import Symptoms from "@app/modules/symptoms/symptoms";
 import SymptomsDuration from "@app/modules/symptoms-duration/symptoms-duration";
@@ -12,6 +13,9 @@ const routes = [
   {
     path: "/homescreen",  //will be deleted soon
     component: Home,
+  }, {
+    path: "/details",
+    component: PersonalDetails,
   }, {
     path: "/home",
     component: HomeScreen,

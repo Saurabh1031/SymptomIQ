@@ -128,7 +128,7 @@ export default function Home() {
             style={{ marginTop: "30px", width: "100%" }}
           />
           <ContentHeading style={{ textAlign: "center" }}>
-            Welcome to the <BoldContent>SymptomIQ!</BoldContent>
+            Welcome to the <BoldContent>BodyCheck!</BoldContent>
             <ContentSubHeading>
               Please answer the following questions to find out what might be
               causing your symptoms

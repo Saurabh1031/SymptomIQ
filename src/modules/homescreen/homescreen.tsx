@@ -33,10 +33,10 @@ const HomeScreen = () => {
   const name = localStorage.getItem('name') || "";
   const genderName = localStorage.getItem('gender')?.toLowerCase() || "";
   const dob = localStorage.getItem('dob') || "";
-  const userid = localStorage.getItem('userid') || "";
+  const userid = localStorage.getItem('userid') || "123";
   const calculateAge = (dateOfBirth) => {
     const dobParts = dateOfBirth ? dateOfBirth.split('-') : [0, 0, 0];
-    const dob = new Date(dobParts[0], dobParts[1] - 1, dobParts[2]); // Month is 0-indexed in JavaScript Date
+    const dob = new Date(dobParts[0], dobParts[1] - 1, dobParts[2]); // Month is 0-indexed in JavaScript Date //year-month-day
     const currentDate = new Date();
 
     let age = currentDate.getFullYear() - dob.getFullYear();
@@ -252,10 +252,8 @@ const HomeScreen = () => {
       setShowWelcome(false);
     }, 3000);
     sessionStorage.clear();
-  }, [])
-  const handleBackClick = () => {
-    setLeavingMidway(true);
-  }
+  }, []);
+
   const onChangeAgeHandler = (e: any) => {
     let age = e.target.value;
     let isWholeNumber = /^[1-9]\d*$/.test(age);
@@ -273,10 +271,10 @@ const HomeScreen = () => {
           <>
             <NewHeader
               className="specialities"
-              title="SymptomIQ"
+              title="BodyCheck"
               showBackButton={true}
               onBack={() => {
-                //handleBackClick();
+                history.push({ pathname: "/details" });
               }}
             />
             <StepperContainer>

@@ -30,13 +30,13 @@ export default function Layout() {
           <Route
             exact
             path="/"
-            render={() => <Redirect to="/home" />}
+            render={() => <Redirect to="/details" />}
           />
-          <Route
+          {/* <Route
             exact
             path="/bridge"
             render={() => <Redirect to="/home" />}
-          />
+          /> */}
           <Routes />
         </PageContent>
       </PageContainer>

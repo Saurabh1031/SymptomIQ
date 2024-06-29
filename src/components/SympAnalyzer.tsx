@@ -140,7 +140,7 @@ export default function SymptomAnalyzer() {
     <div>
       <SympChekerParent>
         <AiOutlineLeft />
-        <SymptomAnalyserTitle>SymptomIQ</SymptomAnalyserTitle>
+        <SymptomAnalyserTitle>BodyCheck</SymptomAnalyserTitle>
       </SympChekerParent>
       <Stepper
         steps={steps}

@@ -27,7 +27,7 @@ const WelcomeScreen = ({ name }) => {
                     <DoctorImage src={HealthLogo} alt="Health logo" />
                 </DoctorImageContainer>
                 <ContentHeading>
-                    Welcome to the <BoldContent>SymptomIQ!</BoldContent>
+                    Welcome to the <BoldContent>BodyCheck!</BoldContent>
                     <ContentSubHeading>
                         Please answer the following questions to find out what might be
                         causing your symptoms

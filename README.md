@@ -1,3 +1,3 @@
-# SymptomIQ
+# BodyCheck
 
-SymptomIQ web app
+BodyCheck web app
